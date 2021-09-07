@@ -1,0 +1,10 @@
+body {
+  margin: 0;
+
+  background-image: url(./images/background26.gif);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
