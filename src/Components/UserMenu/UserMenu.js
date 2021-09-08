@@ -17,7 +17,7 @@ export default function UserMenu() {
 
   return (
     <div style={styles.div}>
-      <Typography component="subtitle1" sx={{ mr: 1 }}>
+      <Typography component="h6" variant="h6" sx={{}}>
         Welcome {name}!
       </Typography>
 

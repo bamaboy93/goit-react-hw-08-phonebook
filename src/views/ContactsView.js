@@ -1,18 +1,11 @@
 import React from 'react';
 import Typography from '@mui/material//Typography';
 
-import { useEffect } from 'react';
-import { useDispatch } from 'react-redux';
-import operations from '../redux/operations';
-
 import ContactForm from '../Components/Form/Form';
 import ContactsList from '../Components/ContactList/ContactList';
 import Filter from '../Components/Filter/Filter';
 
 export default function ContactsView() {
-  const dispatch = useDispatch();
-  useEffect(() => dispatch(operations.fetchContacts()), [dispatch]);
-
   return (
     <div className="Container">
       <Typography component="h1" variant="h2" sx={{ mt: 10, mb: 5 }}>

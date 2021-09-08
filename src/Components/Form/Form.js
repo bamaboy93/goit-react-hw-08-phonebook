@@ -60,7 +60,6 @@ const Form = () => {
       <TextField
         id="outlined-required"
         label="Name"
-        defaultValue="Hello World"
         type="text"
         onChange={inputChange}
         value={name}
@@ -72,8 +71,7 @@ const Form = () => {
       <TextField
         id="outlined-required"
         label="Tel"
-        defaultValue="Hello World"
-        type="tel"
+        type="text"
         value={number}
         onChange={inputChange}
         name="number"

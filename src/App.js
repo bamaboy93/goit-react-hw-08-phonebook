@@ -1,7 +1,7 @@
 import { useEffect, lazy, Suspense } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { Switch } from 'react-router-dom';
-
+import Loader from 'react-loader-spinner';
 import AppBar from './Components/AppBar/AppBar';
 import PrivateRoute from './Components/PrivateRoute';
 import PublicRoute from './Components/PublicRoute';
@@ -28,7 +28,7 @@ export default function App() {
         <AppBar />
 
         <Switch>
-          <Suspense fallback={<p>Loading...</p>}>
+          <Suspense fallback={<Loader />}>
             <PublicRoute exact path="/">
               <HomeView />
             </PublicRoute>
